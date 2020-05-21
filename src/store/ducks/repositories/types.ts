@@ -1,7 +1,7 @@
 // Actions Types
 export enum RepositoriesTypes { //enum = CONST
     LOAD_REQUEST = '@repositories/LOAD_REQUEST',
-    LOAD_SUCCCES = '@repositories/LOAD_SUCCCES',
+    LOAD_SUCCES = '@repositories/LOAD_SUCCES',
     LOAD_FAILURE = '@repositories/LOAD_FAILURE'
 }
 /*
