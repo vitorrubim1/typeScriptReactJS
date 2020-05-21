@@ -1,3 +1,5 @@
+//COMO A GUIA DE ESTILO VAI FUNCIONAR:
+
 module.exports = {
     env: {
         browser: true,
