@@ -15,7 +15,7 @@ const reducer: Reducer<RepositoriesState> = (state = INITIAL_STATE, action) => {
         case RepositoriesTypes.LOAD_REQUEST:
             return { ...state, loading: true }; //SE FOR REQ, VOU COPIAR TODO O ESTADO E DAR LOADING TRUE
         case RepositoriesTypes.LOAD_SUCCES:
-            return { ...state, loading: false, error: false, data: action.payload.data }
+            return { ...state, loading: false, error: false, data: action.payload.data } //action.payload.data BUSCANDO O CONTEUDO E ARMAZENANDO EM DATA
         case RepositoriesTypes.LOAD_FAILURE:
             return { ...state, loading: false, error: true, data: [] };
         default:
@@ -26,4 +26,4 @@ const reducer: Reducer<RepositoriesState> = (state = INITIAL_STATE, action) => {
     'Reducer' recebe um parametro, para saber o formato que vai manipular os dados
 */
 
-
+export default reducer;
